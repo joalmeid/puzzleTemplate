@@ -1,0 +1,33 @@
+<ion-view view-title="Settings">
+  <ion-content>
+    <ion-list>
+    <div class="list">
+			<label class="item item-input item-select">
+				<div class="input-label">
+					Rows
+				</div>
+				<select ng-model="rows" ng-options="dim for dim in allowedDims"></select>
+			</label>
+		</div>
+
+		<div class="list">
+			<label class="item item-input item-select">
+				<div class="input-label">
+					Columns
+				</div>
+				<select ng-model="columns" ng-options="dim for dim in allowedDims"></select><br>
+			</label>
+		</div>
+        
+        <div class="list">
+			<label class="item item-input item-select">
+				<div class="input-label">
+					Time to finish (in mins)
+				</div>
+				<select ng-model="time" ng-options="dim for dim in allowedDims"></select><br>
+			</label>
+		</div>
+		
+    </ion-list>
+  </ion-content>
+</ion-view>
