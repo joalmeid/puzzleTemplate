@@ -35,6 +35,9 @@ angular.module('starter.services', [])
     remove: function(image) {
       images.splice(images.indexOf(image), 1);
     },
+    add: function(image) {
+        images.push(image);
+    },
     get: function(imageId) {
       for (var i = 0; i < images.length; i++) {
         if (images[i].id === parseInt(imageId)) {
